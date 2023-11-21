@@ -11,7 +11,7 @@ echo Git Installed
 set token=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
 echo When Prompted For Login Select Token Then Copy And Paste This Into The Text Box: %token%
 pause
-curl https://raw.githubusercontent.com/ASBStore/StoreFront/main/Logins.txt?token=GHSAT0AAAAAACKSB3BVDUP4LZP5QATQDLEYZK37UNA --ssl-no-revoke>Logins.txt
+curl https://raw.githubusercontent.com/ASBStore/StoreFront/main/Logins.txt --ssl-no-revoke>Logins.txt
 
 echo %USERNAME% %DATE% %TIME% >>Logins.txt
 git commit Logins.txt -m "New Login"
